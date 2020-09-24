@@ -76,49 +76,6 @@ function reset(){
     h1.style.backgroundColor = "steelblue" ;
 }
 
-// easyBtn.addEventListener("click",function(){
-//     hardBtn.classList.remove("selected")
-//     easyBtn.classList.add("selected");
-//     resetGame.textContent = "New Colors";
-//     numSquares = 3;
-//     //generate all new colors
-//     colors = generateRandomColors(numSquares);
-//     //pick the right color
-//     pickedColor = pickColor(numSquares);
-//     //change color of squares
-//     for (var i=0; i< squares.length ; i++){
-//         if(colors[i]){
-//             squares[i].style.backgroundColor = colors[i];
-//         }else{
-//             squares[i].style.display = "none"; 
-//         }
-        
-//     }
-//     //change displayColor
-//     colorDisplay.textContent = pickedColor;
-    
-
-// })
-
-// hardBtn.addEventListener("click",function(){
-//     easyBtn.classList.remove("selected")
-//     hardBtn.classList.add("selected");
-//     numSquares = 6;
-//     colors = generateRandomColors(numSquares);
-//     //pick the right color
-//     pickedColor = pickColor(numSquares);
-//     //change color of squares
-//     for (var i=0; i< squares.length ; i++){
-//         squares[i].style.backgroundColor = colors[i];
-//         squares[i].style.display = "block"; 
-//         }
-//     //change displayColor
-//     colorDisplay.textContent = pickedColor;
-    
-// })
-
-
-
 function changeColors(color){
     for( var i =0;i< colors.length; i++){
         squares[i].style.backgroundColor = color;
@@ -149,3 +106,5 @@ function randomColor(){
     var blue = Math.floor(Math.random() * 256);
     return "rgb(" + red + ", "+ green +", " + blue +")";
 }
+
+
